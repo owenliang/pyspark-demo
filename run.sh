@@ -13,7 +13,7 @@ spark-submit \
   --deploy-mode cluster \
   --num-executors 1 \
   --executor-memory 1G \
-  --archives hdfs:////Python.zip#Python \
+  --archives hdfs:///Python.zip#Python \
   --py-files ./src.zip \
   --conf spark.pyspark.python=./Python/bin/python3 \
   src/main.py
